@@ -11,7 +11,10 @@
 
 #import <Foundation/Foundation.h>
 
-int higherSum(int firstValue, int secondValue){    
+
+//If we don't want to return a value - Part 1
+void higherSum(int firstValue, int secondValue){
+    
     if (firstValue > secondValue) {
         NSLog(@"first value: %i is the larger number", firstValue);
     } else if(firstValue < secondValue) {
@@ -20,12 +23,31 @@ int higherSum(int firstValue, int secondValue){
         NSLog(@"%i is equal to %i", firstValue, secondValue);
     }
   }
+// if we want to return a value - Part 1
+int higherSumRevised(int firstValue, int secondValue) {
+    // store value
+    int storedValue;
+    if(firstValue > secondValue) {
+        storedValue = firstValue;
+    } else if(firstValue < secondValue) {
+        storedValue = secondValue;
+    }
+    return storedValue;
+}
 
 int main (int argc, const char * argv[]){
     @autoreleasepool {
        
-
-        NSLog(@"%i is the higher value", higherSum(10, 20));
+        // one operation
+        // second opertation
+        // two stored variable
+        
+        //using the no value return
+        higherSum(10, 20);
+        
+        //using the value return
+        int storeHigherSum = higherSumRevised(34,40);
+        NSLog(@"%i", storeHigherSum);
         
     }
     return 0;
