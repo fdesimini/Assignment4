@@ -23,8 +23,9 @@ void higherSum(int firstValue, int secondValue){
         NSLog(@"%i is equal to %i", firstValue, secondValue);
     }
   }
-// if we want to return a value - Part 1
-int higherSumRevised(int firstValue, int secondValue) {
+/* if we want to return a value - Part 1 - Kwame version
+
+ int higherSumRevised(int firstValue, int secondValue) {
     // store value
     int storedValue;
     if(firstValue > secondValue) {
@@ -34,8 +35,9 @@ int higherSumRevised(int firstValue, int secondValue) {
     }
     return storedValue;
 }
+*/
 
-int main (int argc, const char * argv[]){
+int main5 (int argc, const char * argv[]){
     @autoreleasepool {
        
         // one operation
@@ -45,9 +47,9 @@ int main (int argc, const char * argv[]){
         //using the no value return
         higherSum(10, 20);
         
-        //using the value return
+        /*using the value return - Kwame version
         int storeHigherSum = higherSumRevised(34,40);
-        NSLog(@"%i", storeHigherSum);
+        NSLog(@"%i", storeHigherSum);*/
         
     }
     return 0;
